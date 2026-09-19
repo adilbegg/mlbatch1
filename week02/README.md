@@ -29,18 +29,16 @@ Three images with different structural characteristics were selected:
 
 **Smooth – Sky**
 
-Source: **[ADD ORIGINAL IMAGE PAGE URL]**
-Licence: **[ADD LICENCE / USAGE PERMISSION]**
+Source: (https://www.magnific.com/free-photo/white-cloud-blue-sky-sea_3962982.htm#fromView=keyword&page=1&position=1&uuid=71a0ed45-140a-4443-8dad-c9161afb3d14&track=ais_hybrid&query=Sky)
+
 
 **Detailed – Foliage**
 
-Source: **[ADD ORIGINAL IMAGE PAGE URL]**
-Licence: **[ADD LICENCE / USAGE PERMISSION]**
+Source: (https://www.gardenia.net/guide/best-foliage-plants-for-your-garden)
 
 **Mixed – Buildings**
 
-Source: **[ADD ORIGINAL IMAGE PAGE URL]**
-Licence: **[ADD LICENCE / USAGE PERMISSION]**
+Source: https://www.britannica.com/topic/Empire-State-Building
 
 > Before submission, the original webpage and licence for each image should be provided. Google Images itself is a search engine and should not be listed as the image source.
 
