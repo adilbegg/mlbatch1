@@ -1,0 +1,17 @@
+column,dtype,% missing,distinct,min / max or top 3,outliers (IQR),proposed treatment
+id,int64,0.0,48895,2539 to 36487245,0,Drop: unique listing identifier
+name,str,0.03,47905,"['Hillside Hotel', 'Home away from home', 'New york Multi-unit building']",N/A,Drop: high-cardinality free text; missingness investigated
+host_id,int64,0.0,37457,2438 to 274321313,1526,Drop: host identifier
+host_name,str,0.04,11452,"['Michael', 'David', 'Sonder (NYC)']",N/A,Drop: high-cardinality names; missingness investigated
+neighbourhood_group,str,0.0,5,"['Manhattan', 'Brooklyn', 'Queens']",N/A,One-hot; ignore unknown categories
+neighbourhood,str,0.0,221,"['Williamsburg', 'Bedford-Stuyvesant', 'Harlem']",N/A,Rare grouping (min_frequency=50) + one-hot
+latitude,float64,0.0,19048,40.49979 to 40.91306,425,Median fallback + StandardScaler
+longitude,float64,0.0,14718,-74.24442 to -73.71299,2833,Median fallback + StandardScaler
+room_type,str,0.0,3,"['Entire home/apt', 'Private room', 'Shared room']",N/A,One-hot; ignore unknown categories
+price,int64,0.0,674,0 to 10000,2972,Target: exclude zero-price rows from supervised modeling
+minimum_nights,int64,0.0,109,1 to 1250,6607,Median fallback + log1p + StandardScaler
+number_of_reviews,int64,0.0,394,0 to 629,6021,Median fallback + log1p + StandardScaler
+last_review,str,20.56,1764,"['2019-06-23', '2019-07-01', '2019-06-30']",N/A,Drop raw date; missingness coincides with zero reviews
+reviews_per_month,float64,20.56,937,0.01 to 58.5,1793,Zero imputation + missing indicator + log1p + StandardScaler
+calculated_host_listings_count,int64,0.0,47,1 to 327,7081,Median fallback + log1p + RobustScaler
+availability_365,int64,0.0,366,0 to 365,0,Median fallback + MinMaxScaler
